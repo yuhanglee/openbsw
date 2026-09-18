@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../platforms.html">platforms</a></li>
+        
+        <li><a href="../../../../../../s32k1xx.html">s32k1xx</a></li>
+        
+        <li><a href="../../../../../bsp.html">bsp</a></li>
+        
+        <li><a href="../../../../bspFlexCan.html">bspFlexCan</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../can.html">can</a>
+            </li>
+
+        
+        <li class="active"><a href="../FlexCANDevice.cpp.html">FlexCANDevice.cpp</a>:101
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">bios::FlexCANDevice::init()</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0003a360</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>24 (static)</td>
+                <td>516</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../../../canflex2Transceiver/src/can/transceiver/canflex2/CanFlex2Transceiver.cpp/5695fe265719d8b622e65b37de20fc5d.html">bios::CanFlex2Transceiver::init() (92)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=100
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short) (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../libs/bsw/bsp/include/bsp/timer/isEqualAfterTimeout.h/e6bed7a376b976fb3027a77516f202dd.html">bool bsp::isEqualAfterTimeout&lt;unsigned long volatile&gt;(unsigned long volatile const*, unsigned long volatile, unsigned long volatile, unsigned long) (76)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../../../libs/bsw/bsp/include/bsp/timer/isEqualAfterTimeout.h/e6bed7a376b976fb3027a77516f202dd.html">bool bsp::isEqualAfterTimeout&lt;unsigned long volatile&gt;(unsigned long volatile const*, unsigned long volatile, unsigned long volatile, unsigned long) (76)</a></pre>
+    
+
+    <pre>
+
+    bios::FlexCANDevice::init():
+
+       3a360:	6803      	ldr	r3, [r0, #0]
+
+       3a362:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+
+       3a366:	4604      	mov	r4, r0
+
+       3a368:	8998      	ldrh	r0, [r3, #12]
+
+       3a36a:	f001 fa21 	bl	3b7b0 <<a href="../../../../bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       3a36e:	6823      	ldr	r3, [r4, #0]
+
+       3a370:	89d8      	ldrh	r0, [r3, #14]
+
+       3a372:	f001 fa1d 	bl	3b7b0 <<a href="../../../../bspIo/src/io/Io.cpp/cec6484b130ee51f1f05d1885b5b84f0.html">bios::Io::setDefaultConfiguration(unsigned short)</a>>
+
+       3a376:	6860      	ldr	r0, [r4, #4]
+
+       3a378:	4a79      	ldr	r2, [pc, #484]	@ (3a560 <<a href="./857396a19ed691dd05fe4d4419b1328e.html">bios::FlexCANDevice::init()</a>+0x200>)
+
+       3a37a:	6803      	ldr	r3, [r0, #0]
+
+       3a37c:	681b      	ldr	r3, [r3, #0]
+
+       3a37e:	4293      	cmp	r3, r2
+
+       3a380:	f040 80e7 	bne.w	3a552 <<a href="./857396a19ed691dd05fe4d4419b1328e.html">bios::FlexCANDevice::init()</a>+0x1f2>
+
+       3a384:	68a0      	ldr	r0, [r4, #8]
+
+       3a386:	6801      	ldr	r1, [r0, #0]
+
+       3a388:	f021 4100 	bic.w	r1, r1, #2147483648	@ 0x80000000
+
+       3a38c:	6001      	str	r1, [r0, #0]
+
+       3a38e:	6801      	ldr	r1, [r0, #0]
+
+       3a390:	f04f 7200 	mov.w	r2, #33554432	@ 0x2000000
+
+       3a394:	4311      	orrs	r1, r2
+
+       3a396:	6001      	str	r1, [r0, #0]
+
+       3a398:	f44f 7396 	mov.w	r3, #300	@ 0x12c
+
+       3a39c:	4611      	mov	r1, r2
+
+       3a39e:	f7ff ffb9 	bl	3a314 <<a href="../../../../../../../libs/bsw/bsp/include/bsp/timer/isEqualAfterTimeout.h/e6bed7a376b976fb3027a77516f202dd.html">bool bsp::isEqualAfterTimeout<unsigned long volatile>(unsigned long volatile const*, unsigned long volatile, unsigned long volatile, unsigned long)</a>>
+
+       3a3a2:	4602      	mov	r2, r0
+
+       3a3a4:	2800      	cmp	r0, #0
+
+       3a3a6:	f040 80d1 	bne.w	3a54c <<a href="./857396a19ed691dd05fe4d4419b1328e.html">bios::FlexCANDevice::init()</a>+0x1ec>
+
+       3a3aa:	68a0      	ldr	r0, [r4, #8]
+
+       3a3ac:	6801      	ldr	r1, [r0, #0]
+
+       3a3ae:	f041 41a0 	orr.w	r1, r1, #1342177280	@ 0x50000000
+
+       3a3b2:	6001      	str	r1, [r0, #0]
+
+       3a3b4:	f44f 7396 	mov.w	r3, #300	@ 0x12c
+
+       3a3b8:	f04f 7180 	mov.w	r1, #16777216	@ 0x1000000
+
+       3a3bc:	f7ff ffaa 	bl	3a314 <<a href="../../../../../../../libs/bsw/bsp/include/bsp/timer/isEqualAfterTimeout.h/e6bed7a376b976fb3027a77516f202dd.html">bool bsp::isEqualAfterTimeout<unsigned long volatile>(unsigned long volatile const*, unsigned long volatile, unsigned long volatile, unsigned long)</a>>
+
+       3a3c0:	2800      	cmp	r0, #0
+
+       3a3c2:	f040 80c3 	bne.w	3a54c <<a href="./857396a19ed691dd05fe4d4419b1328e.html">bios::FlexCANDevice::init()</a>+0x1ec>
+
+       3a3c6:	68a3      	ldr	r3, [r4, #8]
+
+       3a3c8:	6826      	ldr	r6, [r4, #0]
+
+       3a3ca:	681a      	ldr	r2, [r3, #0]
+
+       3a3cc:	f442 3240 	orr.w	r2, r2, #196608	@ 0x30000
+
+       3a3d0:	f042 0220 	orr.w	r2, r2, #32
+
+       3a3d4:	601a      	str	r2, [r3, #0]
+
+       3a3d6:	6058      	str	r0, [r3, #4]
+
+       3a3d8:	685a      	ldr	r2, [r3, #4]
+
+       3a3da:	68b1      	ldr	r1, [r6, #8]
+
+       3a3dc:	430a      	orrs	r2, r1
+
+       3a3de:	605a      	str	r2, [r3, #4]
+
+       3a3e0:	6b5a      	ldr	r2, [r3, #52]	@ 0x34
+
+       3a3e2:	f442 2280 	orr.w	r2, r2, #262144	@ 0x40000
+
+       3a3e6:	635a      	str	r2, [r3, #52]	@ 0x34
+
+       3a3e8:	6160      	str	r0, [r4, #20]
+
+       3a3ea:	7c32      	ldrb	r2, [r6, #16]
+
+       3a3ec:	2a00      	cmp	r2, #0
+
+       3a3ee:	f000 80b4 	beq.w	3a55a <<a href="./857396a19ed691dd05fe4d4419b1328e.html">bios::FlexCANDevice::init()</a>+0x1fa>
+
+       3a3f2:	f04f 0c01 	mov.w	ip, #1
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a3f6:	4601      	mov	r1, r0
+
+       3a3f8:	2504      	movs	r5, #4
+
+    _ZN4bios13FlexCANDevice13messageBufferEh():
+
+       3a3fa:	0102      	lsls	r2, r0, #4
+
+       3a3fc:	3380      	adds	r3, #128	@ 0x80
+
+       3a3fe:	eb03 1600 	add.w	r6, r3, r0, lsl #4
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a402:	5099      	str	r1, [r3, r2]
+
+       3a404:	f853 e002 	ldr.w	lr, [r3, r2]
+
+       3a408:	f361 5e55 	bfi	lr, r1, #21, #1
+
+       3a40c:	f843 e002 	str.w	lr, [r3, r2]
+
+       3a410:	f853 8002 	ldr.w	r8, [r3, r2]
+
+       3a414:	f365 681b 	bfi	r8, r5, #24, #4
+
+       3a418:	f843 8002 	str.w	r8, [r3, r2]
+
+       3a41c:	6071      	str	r1, [r6, #4]
+
+       3a41e:	60b1      	str	r1, [r6, #8]
+
+    _ZN4bios13FlexCANDevice13messageBufferEh():
+
+       3a420:	68a3      	ldr	r3, [r4, #8]
+
+       3a422:	4413      	add	r3, r2
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a424:	f500 7708 	add.w	r7, r0, #544	@ 0x220
+
+       3a428:	f8c3 108c 	str.w	r1, [r3, #140]	@ 0x8c
+
+       3a42c:	68a3      	ldr	r3, [r4, #8]
+
+    bios::FlexCANDevice::init():
+
+       3a42e:	6826      	ldr	r6, [r4, #0]
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a430:	f843 1027 	str.w	r1, [r3, r7, lsl #2]
+
+    bios::FlexCANDevice::init():
+
+       3a434:	6962      	ldr	r2, [r4, #20]
+
+       3a436:	ea42 020c 	orr.w	r2, r2, ip
+
+       3a43a:	6162      	str	r2, [r4, #20]
+
+       3a43c:	7c32      	ldrb	r2, [r6, #16]
+
+       3a43e:	3001      	adds	r0, #1
+
+       3a440:	fa5f fe80 	uxtb.w	lr, r0
+
+       3a444:	4572      	cmp	r2, lr
+
+       3a446:	ea4f 0c4c 	mov.w	ip, ip, lsl #1
+
+       3a44a:	d8d6      	bhi.n	3a3fa <<a href="./857396a19ed691dd05fe4d4419b1328e.html">bios::FlexCANDevice::init()</a>+0x9a>
+
+       3a44c:	2501      	movs	r5, #1
+
+       3a44e:	4095      	lsls	r5, r2
+
+       3a450:	7c71      	ldrb	r1, [r6, #17]
+
+       3a452:	b349      	cbz	r1, 3a4a8 <<a href="./857396a19ed691dd05fe4d4419b1328e.html">bios::FlexCANDevice::init()</a>+0x148>
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a454:	2000      	movs	r0, #0
+
+       3a456:	f04f 0c04 	mov.w	ip, #4
+
+    _ZN4bios13FlexCANDevice13messageBufferEh():
+
+       3a45a:	0111      	lsls	r1, r2, #4
+
+       3a45c:	3380      	adds	r3, #128	@ 0x80
+
+       3a45e:	eb03 1e02 	add.w	lr, r3, r2, lsl #4
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a462:	5058      	str	r0, [r3, r1]
+
+       3a464:	585e      	ldr	r6, [r3, r1]
+
+       3a466:	f446 1600 	orr.w	r6, r6, #2097152	@ 0x200000
+
+       3a46a:	505e      	str	r6, [r3, r1]
+
+       3a46c:	585e      	ldr	r6, [r3, r1]
+
+       3a46e:	f36c 661b 	bfi	r6, ip, #24, #4
+
+       3a472:	505e      	str	r6, [r3, r1]
+
+       3a474:	f8ce 0004 	str.w	r0, [lr, #4]
+
+       3a478:	f8ce 0008 	str.w	r0, [lr, #8]
+
+    _ZN4bios13FlexCANDevice13messageBufferEh():
+
+       3a47c:	68a3      	ldr	r3, [r4, #8]
+
+       3a47e:	440b      	add	r3, r1
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a480:	f502 7708 	add.w	r7, r2, #544	@ 0x220
+
+       3a484:	f8c3 008c 	str.w	r0, [r3, #140]	@ 0x8c
+
+       3a488:	68a3      	ldr	r3, [r4, #8]
+
+    bios::FlexCANDevice::init():
+
+       3a48a:	6826      	ldr	r6, [r4, #0]
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a48c:	f843 0027 	str.w	r0, [r3, r7, lsl #2]
+
+    bios::FlexCANDevice::init():
+
+       3a490:	6961      	ldr	r1, [r4, #20]
+
+       3a492:	4329      	orrs	r1, r5
+
+       3a494:	6161      	str	r1, [r4, #20]
+
+       3a496:	7c31      	ldrb	r1, [r6, #16]
+
+       3a498:	7c77      	ldrb	r7, [r6, #17]
+
+       3a49a:	3201      	adds	r2, #1
+
+       3a49c:	b2d2      	uxtb	r2, r2
+
+       3a49e:	4439      	add	r1, r7
+
+       3a4a0:	428a      	cmp	r2, r1
+
+       3a4a2:	ea4f 0545 	mov.w	r5, r5, lsl #1
+
+       3a4a6:	dbd8      	blt.n	3a45a <<a href="./857396a19ed691dd05fe4d4419b1328e.html">bios::FlexCANDevice::init()</a>+0xfa>
+
+       3a4a8:	7cb2      	ldrb	r2, [r6, #18]
+
+       3a4aa:	b322      	cbz	r2, 3a4f6 <<a href="./857396a19ed691dd05fe4d4419b1328e.html">bios::FlexCANDevice::init()</a>+0x196>
+
+       3a4ac:	2210      	movs	r2, #16
+
+       3a4ae:	4616      	mov	r6, r2
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a4b0:	2000      	movs	r0, #0
+
+       3a4b2:	f04f 0c08 	mov.w	ip, #8
+
+    _ZN4bios13FlexCANDevice13messageBufferEh():
+
+       3a4b6:	0111      	lsls	r1, r2, #4
+
+       3a4b8:	3380      	adds	r3, #128	@ 0x80
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a4ba:	f506 7e08 	add.w	lr, r6, #544	@ 0x220
+
+       3a4be:	5058      	str	r0, [r3, r1]
+
+       3a4c0:	585e      	ldr	r6, [r3, r1]
+
+       3a4c2:	f360 5655 	bfi	r6, r0, #21, #1
+
+       3a4c6:	505e      	str	r6, [r3, r1]
+
+       3a4c8:	585f      	ldr	r7, [r3, r1]
+
+    _ZN4bios13FlexCANDevice13messageBufferEh():
+
+       3a4ca:	eb03 1502 	add.w	r5, r3, r2, lsl #4
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a4ce:	f36c 671b 	bfi	r7, ip, #24, #4
+
+       3a4d2:	505f      	str	r7, [r3, r1]
+
+       3a4d4:	6068      	str	r0, [r5, #4]
+
+       3a4d6:	60a8      	str	r0, [r5, #8]
+
+    _ZN4bios13FlexCANDevice13messageBufferEh():
+
+       3a4d8:	68a3      	ldr	r3, [r4, #8]
+
+       3a4da:	440b      	add	r3, r1
+
+    bios::FlexCANDevice::init():
+
+       3a4dc:	3201      	adds	r2, #1
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a4de:	f8c3 008c 	str.w	r0, [r3, #140]	@ 0x8c
+
+       3a4e2:	68a3      	ldr	r3, [r4, #8]
+
+    bios::FlexCANDevice::init():
+
+       3a4e4:	6821      	ldr	r1, [r4, #0]
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a4e6:	f843 002e 	str.w	r0, [r3, lr, lsl #2]
+
+    bios::FlexCANDevice::init():
+
+       3a4ea:	7c89      	ldrb	r1, [r1, #18]
+
+       3a4ec:	b2d2      	uxtb	r2, r2
+
+       3a4ee:	310f      	adds	r1, #15
+
+       3a4f0:	4291      	cmp	r1, r2
+
+       3a4f2:	4616      	mov	r6, r2
+
+       3a4f4:	dadf      	bge.n	3a4b6 <<a href="./857396a19ed691dd05fe4d4419b1328e.html">bios::FlexCANDevice::init()</a>+0x156>
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a4f6:	2200      	movs	r2, #0
+
+       3a4f8:	f8c3 2270 	str.w	r2, [r3, #624]	@ 0x270
+
+       3a4fc:	f8d3 1270 	ldr.w	r1, [r3, #624]	@ 0x270
+
+       3a500:	f362 5155 	bfi	r1, r2, #21, #1
+
+       3a504:	f8c3 1270 	str.w	r1, [r3, #624]	@ 0x270
+
+       3a508:	f8d3 1270 	ldr.w	r1, [r3, #624]	@ 0x270
+
+       3a50c:	2008      	movs	r0, #8
+
+       3a50e:	f360 611b 	bfi	r1, r0, #24, #4
+
+       3a512:	f8c3 1270 	str.w	r1, [r3, #624]	@ 0x270
+
+       3a516:	f8c3 2274 	str.w	r2, [r3, #628]	@ 0x274
+
+       3a51a:	f8c3 2278 	str.w	r2, [r3, #632]	@ 0x278
+
+    _ZN4bios13FlexCANDevice13messageBufferEh():
+
+       3a51e:	68a3      	ldr	r3, [r4, #8]
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a520:	f8c3 227c 	str.w	r2, [r3, #636]	@ 0x27c
+
+       3a524:	68a3      	ldr	r3, [r4, #8]
+
+    bios::FlexCANDevice::init():
+
+       3a526:	f04f 31ff 	mov.w	r1, #4294967295	@ 0xffffffff
+
+    _ZN4bios13FlexCANDevice18setupMessageBufferEhhb():
+
+       3a52a:	f8c3 28fc 	str.w	r2, [r3, #2300]	@ 0x8fc
+
+    bios::FlexCANDevice::init():
+
+       3a52e:	4610      	mov	r0, r2
+
+       3a530:	611a      	str	r2, [r3, #16]
+
+       3a532:	615a      	str	r2, [r3, #20]
+
+       3a534:	619a      	str	r2, [r3, #24]
+
+       3a536:	629a      	str	r2, [r3, #40]	@ 0x28
+
+       3a538:	6319      	str	r1, [r3, #48]	@ 0x30
+
+       3a53a:	6219      	str	r1, [r3, #32]
+
+       3a53c:	f8c4 22ac 	str.w	r2, [r4, #684]	@ 0x2ac
+
+       3a540:	f8c4 22b0 	str.w	r2, [r4, #688]	@ 0x2b0
+
+       3a544:	f8c4 22b4 	str.w	r2, [r4, #692]	@ 0x2b4
+
+       3a548:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+
+       3a54c:	2007      	movs	r0, #7
+
+       3a54e:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+
+       3a552:	6822      	ldr	r2, [r4, #0]
+
+       3a554:	6951      	ldr	r1, [r2, #20]
+
+       3a556:	4798      	blx	r3
+
+       3a558:	e714      	b.n	3a384 <<a href="./857396a19ed691dd05fe4d4419b1328e.html">bios::FlexCANDevice::init()</a>+0x24>
+
+       3a55a:	2501      	movs	r5, #1
+
+       3a55c:	e778      	b.n	3a450 <<a href="./857396a19ed691dd05fe4d4419b1328e.html">bios::FlexCANDevice::init()</a>+0xf0>
+
+       3a55e:	bf00      	nop
+
+       3a560:	00039e75 	.word	0x00039e75
+
+    </pre>
+
+    
+    <pre><a href="./47957dd6917c7f67d5ab2cace17fe52d.html">bios::FlexCANDevice::start() (80)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 80</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 76</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    80
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">76</td>
+                <td><a href="../../../../../../../libs/bsw/bsp/include/bsp/timer/isEqualAfterTimeout.h/e6bed7a376b976fb3027a77516f202dd.html" class="icon-function">bool bsp::isEqualAfterTimeout&lt;unsigned long volatile&gt;(unsigned long volatile const*, unsigned long volatile, unsigned long volatile, unsigned long)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">56
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 56</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 644</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    56
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    644
+                    
+                    
+                </td>
+                <td class="col_size">516</td>
+                <td><a href="./857396a19ed691dd05fe4d4419b1328e.html" class="icon-function">bios::FlexCANDevice::init()</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    32
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    128
+                    
+                    
+                </td>
+                <td class="col_size">92</td>
+                <td><a href="../../../../canflex2Transceiver/src/can/transceiver/canflex2/CanFlex2Transceiver.cpp/5695fe265719d8b622e65b37de20fc5d.html" class="icon-function">bios::CanFlex2Transceiver::init()</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">36</td>
+                <td><a href="../../../../../../../executables/referenceApp/platforms/s32k148evb/main/src/systems/CanSystem.cpp/c8aeefa6b106453e995765444f89f55b.html" class="icon-function">systems::CanSystem::run()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>
